@@ -5,6 +5,11 @@ import React,{ useEffect, useState,useReducer } from 'react';
 import Team from './Team';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Example1 from './UseState/Example1';
+import Example2 from './UseState/Example2';
+import Example3 from './UseState/Example3';
+import Example11 from './UseEffect/Example1';
+import Example12 from './UseEffect/Example2';
 
 function App() {
   const [teams, setTeams] = useState([]);
@@ -31,7 +36,11 @@ function App() {
                   teams.map(team => <Team team={team}></Team>)
               }
       </Grid>  
-         
+         <Example1></Example1>
+         <Example2/>
+         <Example3/>
+         <Example11/>
+         <Example12 />
       </Container>
   );
 }
